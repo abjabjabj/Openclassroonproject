@@ -65,3 +65,109 @@ p{
 .menu__bouton-activites:hover a{
     color:var(--btnRechercherMenuIcones);
 }
+
+.article{                             /* ************* Article - Trouvez votre hébergement pour des vacances de rêve ********* */
+    padding: 0px 0px 0px 55px;
+  }
+  h1{
+   font-weight: 700;
+   font-size: 1.5em;
+  }
+  .barre-recherche{                                                  /* Barre de Recherche */
+   display: flex;
+   margin: 20px 0px 30px 0px;
+  }
+  .barre-recherche__bouton-localisation{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   height: 49px;
+   background-color: var(--zonesGrises);
+   border-radius: 15px 0px 0px 15px;
+   font-size: 1.5em;
+  }
+  .barre-recherche__bouton-localisation:hover{
+   background-color: var(--menuInactifEtSurvolBtnLocalisation);
+  }
+  .barre-recherche__bouton-localisation:hover .fa-location-dot{
+   color: var(--ombres);
+  }
+  form{
+   display: flex;
+  }
+  .barre-recherche__ville{
+   padding: 0 10px 0 10px;
+   border: 1px solid var(--zonesGrises);
+   font-size: 1.1em;
+   font-weight: 700;
+  }
+  .barre-recherche__rechercher{
+   font-size: 1.1em;
+   font-weight: 700;
+   width: 132px;
+   height: 51px;
+   background-color: var(--btnRechercherMenuIcones);
+   border: 1px solid var(--btnRechercherMenuIcones);
+   border-radius: 0px 15px 15px 0px;
+   color: var(--fond);
+  }
+  .barre-recherche__rechercher:hover{
+   color:var(--btnRechercherMenuIcones);
+   cursor: pointer;
+   background-color: var(--survolBoutons);
+   border: 1px solid var(--zonesGrises);
+  }
+  .barre-recherche__loupe{
+   display: none;
+  }
+  .filtres{                                                           /* Filtres */
+   display: flex;
+   align-items: center;
+   margin: 20px 50px 0 0;
+  }
+  .filtres h3{
+   margin-right: 10px;
+   font-size: 1.2em;
+  }
+  .filtres p{
+   margin: 0 10px;
+   font-weight: 700;
+  }.filtres__economique-et-familial, .filtres__romantique-et-animaux{                 
+   display: flex;
+  }
+  .filtres__economique, .filtres__familial, .filtres__romantique, .filtres__animaux{
+   display: flex;
+   height: 50px;
+   align-items: center;
+   border: 2px solid var(--ombres);
+   border-radius: 25px;
+   padding: 0px 20px;
+   margin: 0 10px;
+  }
+  .filtres__economique:hover, .filtres__familial:hover, .filtres__romantique:hover, .filtres__animaux:hover{
+   background-color: var(--survolBoutons);
+  }.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+   width: 20px;
+   font-size: 1.5em;
+   color:  var(--btnRechercherMenuIcones);
+   margin-right: 5px;
+  }
+  .informations{
+   display: flex;
+   align-items: center;
+   margin: 0 5px 39px 0;
+  }
+  .informations__icone{
+   display: flex;
+   width: 24px;
+   height: 24px;
+   border: 1px solid var(--ombres);
+   border-radius: 50%;
+   margin: 0 11px 0 0;
+  }
+  .fa-info{
+   color: var(--btnRechercherMenuIcones);
+   margin: auto;
+   font-size: 14px;
+  }

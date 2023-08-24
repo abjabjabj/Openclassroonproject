@@ -20,3 +20,51 @@
            <p class="menu__bouton-activites"><a href="#activites" >Activités</a></p>
         </nav>
     </header>
+
+    <article class="article">     
+        <h1 class="article__titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre-ville ou en pleine nature</p>
+        <div class="barre-recherche">                                     
+            <form  method="POST" action="#">
+                <p class="barre-recherche__bouton-localisation">
+                    <a  href="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+                </p>
+                <input type="text" class="barre-recherche__ville" placeholder="Marseille, France" id="Ville" name="Ville" >
+                <button type="submit" class="barre-recherche__rechercher" id="envoi" name="envoi">Rechercher</button>
+                <button type="submit" class="barre-recherche__loupe" id="envoi-loupe" name="envoi">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <div class="filtres">                                             <!-- Filtres -->
+            <h3>Filtres</h3>
+            <div class="filtres__economique-et-familial">
+                <a class="filtres__economique" href="#">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <p>Economique</p>
+                </a>
+                <a class="filtres__familial" href="#">
+                    <i class="fa-solid fa-person"></i>
+                    <p>Familial</p>
+                </a>
+            </div>
+            <div class="filtres__romantique-et-animaux">
+                <a class="filtres__romantique" href="#">
+                    <i class="fa-solid fa-heart"></i>
+                    <p>Romantique</p>
+                </a>
+                <a class="filtres__animaux" href="#">
+                    <i class="fa-solid fa-dog"></i>
+                    <p>Animaux autorisés</p>
+                </a>
+            </div>
+        </div>
+        <div class="informations">
+            <div class="informations__icone">
+                <i class="fa-solid fa-info"></i>
+            </div>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+    </article>
