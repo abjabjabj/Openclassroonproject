@@ -1,0 +1,298 @@
+
+
+
+@import 'normalize.css';
+
+:root{
+    --fond: #FFFFFF;
+    --btnRechercherMenuIcones: #0065FC;
+    --menuInactifEtSurvolBtnLocalisation: #000000;
+    --zonesGrises: #F2F2F2;
+    --ombres: #D9D9D9;
+    --survolBoutons: #DEEBFF; 
+}
+
+
+body{                                             
+    background-color: var(--fond);                                    
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+a{
+    text-decoration: none;
+    color: var(--menuInactifEtSurvolBtnLocalisation);
+}
+p{
+    margin: 0px;
+    font-size: 1em;
+    font-weight: 400;
+}
+.entete{                                                  
+    display: flex;
+    justify-content: space-between;
+    height: 126px;
+}
+.icone-booki{
+    height: 20px;
+    padding: 54px 0px 0px 55px;
+}
+.menu{
+    display: flex;
+    margin-right: 40px;
+}
+.menu p{
+    font-size: 1.2em;
+}
+.menu__bouton-hebergements{
+    display: flex;
+    justify-content: center;
+    border: transparent solid 2px;
+    padding: 58px 40px 0 40px;
+}
+.menu__bouton-hebergements:hover{
+    border-top: 2px solid var(--btnRechercherMenuIcones);
+}
+.menu__bouton-hebergements:hover a{
+    color: var(--btnRechercherMenuIcones);
+}
+.menu__bouton-activites{
+    display: flex;
+    justify-content: center;
+    border: transparent solid 2px;
+    padding: 58px 40px 0 40px;
+}
+.menu__bouton-activites:hover{
+    border-top: 2px solid var(--btnRechercherMenuIcones);
+    color:var(--btnRechercherMenuIcones);
+}
+.menu__bouton-activites:hover a{
+    color:var(--btnRechercherMenuIcones);
+}
+.article{                             
+     padding: 0px 0px 0px 55px;
+}
+h1{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.barre-recherche{                                                  
+    display: flex;
+    margin: 20px 0px 30px 0px;
+}
+.barre-recherche__bouton-localisation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 49px;
+    background-color: var(--zonesGrises);
+    border-radius: 15px 0px 0px 15px;
+    font-size: 1.5em;
+}
+.barre-recherche__bouton-localisation:hover{
+    background-color: var(--menuInactifEtSurvolBtnLocalisation);
+}
+.barre-recherche__bouton-localisation:hover .fa-location-dot{
+    color: var(--ombres);
+}
+form{
+    display: flex;
+}
+.barre-recherche__ville{
+    padding: 0 10px 0 10px;
+    border: 1px solid var(--zonesGrises);
+    font-size: 1.1em;
+    font-weight: 700;
+}
+.barre-recherche__rechercher{
+    font-size: 1.1em;
+    font-weight: 700;
+    width: 132px;
+    height: 51px;
+    background-color: var(--btnRechercherMenuIcones);
+    border: 1px solid var(--btnRechercherMenuIcones);
+    border-radius: 0px 15px 15px 0px;
+    color: var(--fond);
+}
+.barre-recherche__rechercher:hover{
+    color:var(--btnRechercherMenuIcones);
+    cursor: pointer;
+    background-color: var(--survolBoutons);
+    border: 1px solid var(--zonesGrises);
+}
+.barre-recherche__loupe{
+    display: none;
+}
+.filtres{                                                           
+    display: flex;
+    align-items: center;
+    margin: 20px 50px 0 0;
+}
+.filtres h3{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.filtres p{
+    margin: 0 10px;
+    font-weight: 700;
+}.filtres__economique-et-familial, .filtres__romantique-et-animaux{                 
+    display: flex;
+}
+.filtres__economique, .filtres__familial, .filtres__romantique, .filtres__animaux{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    border: 2px solid var(--ombres);
+    border-radius: 25px;
+    padding: 0px 20px;
+    margin: 0 10px;
+}
+.filtres__economique:hover, .filtres__familial:hover, .filtres__romantique:hover, .filtres__animaux:hover{
+    background-color: var(--survolBoutons);
+}.fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+    width: 20px;
+    font-size: 1.5em;
+    color:  var(--btnRechercherMenuIcones);
+    margin-right: 5px;
+}
+.informations{
+    display: flex;
+    align-items: center;
+    margin: 0 5px 39px 0;
+}
+.informations__icone{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--ombres);
+    border-radius: 50%;
+    margin: 0 11px 0 0;
+}
+.fa-info{
+    color: var(--btnRechercherMenuIcones);
+    margin: auto;
+    font-size: 14px;
+}
+.hebergements-et-les-plus-populaires{         
+    display: flex;
+    margin-bottom: 40px;
+    padding: 0 50px;
+}               
+.hebergements{                                           
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background: var(--zonesGrises);
+    border-radius: 20px;
+    margin: 0 40px 0 0;
+    padding: 40px 40px 20px 9px;
+}
+.hebergements h2{
+    margin: 0 0 23px 30px;
+}
+.hebergements__cartes-1, .hebergements__cartes-2{
+    display: flex;
+    width: 100%;
+}
+.hebergements__fiche{
+    width: 100%;
+    margin: 0 0 30px 30px; 
+    padding-bottom: 10px;
+    border-radius: 20px;
+    background-color: var(--fond);
+    border: 5px solid var(--fond);
+    transition: 0.5s;
+}
+.hebergements__fiche:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 3px var(--ombres);
+}
+.hebergements__image{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 124px;
+    object-fit: con;
+}
+.hebergements__descriptif{
+    padding: 4px 0 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hebergements__descriptif p{
+    font-size:0.9em;
+}
+.fiche__nom{
+    font-weight: 700;
+    height: auto;
+    margin: 0 0 9px 0;
+}
+.fa-star{
+    font-size: 0.8em;
+    color: var(--btnRechercherMenuIcones); 
+    margin: 9px 2px 0 0;
+}
+.fiche__etoiles i:nth-child(5){
+    color: var(--zonesGrises);
+}
+.afficher-plus{
+    font-weight: 700;
+    font-size: 18px;
+    height: 21px;
+}
+.les-plus-populaires{                                 
+    background: var(--zonesGrises);
+    border-radius: 20px;
+    padding: 40px 40px 0 40px;
+    width: 29%;
+}
+.les-plus-populaires__titre-et-icone{
+    display: flex;
+    height: 26px;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-chart-line{
+    color: var(--btnRechercherMenuIcones);
+    font-size: 1.5em;
+}
+.les-plus-populaires__carte{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.les-plus-populaires__fiche{
+    display: flex;
+    margin: 0 0 33px 0;
+    border-radius: 20px;
+    background-color: var(--fond);
+    border: 5px solid var(--fond);
+    transition: 0.5s;
+}
+.les-plus-populaires__fiche:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 3px var(--ombres);
+}
+.les-plus-populaires__cadre-image{
+    width: 45%;
+    height: 144px;
+}
+.les-plus-populaires__image{
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.les-plus-populaires__descriptif{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    padding: 10px 10px 12px 10px;
+    border-radius: 0 20px 20px 0;
+}
+.les-plus-populaires__descriptif p{
+    font-size:0.9em;
+}
+.les-plus-populaires__descriptif .fiche__etoiles{
+    margin-top: auto;
+}
