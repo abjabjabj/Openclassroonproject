@@ -1,0 +1,67 @@
+@import 'normalize.css';
+
+:root{
+    --fond: #FFFFFF;
+    --btnRechercherMenuIcones: #0065FC;
+    --menuInactifEtSurvolBtnLocalisation: #000000;
+    --zonesGrises: #F2F2F2;
+    --ombres: #D9D9D9;
+    --survolBoutons: #DEEBFF; 
+}
+
+body{                                             
+    background-color: var(--fond);                                    
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+a{
+    text-decoration: none;
+    color: var(--menuInactifEtSurvolBtnLocalisation);
+}
+p{
+    margin: 0px;
+    font-size: 1em;
+    font-weight: 400;
+}
+.entete{                                                  /* ************* Entête ********** */
+    display: flex;
+    justify-content: space-between;
+    height: 126px;
+}
+.icone-booki{
+    height: 20px;
+    padding: 54px 0px 0px 55px;
+}
+.menu{
+    display: flex;
+    margin-right: 40px;
+}
+.menu p{
+    font-size: 1.2em;
+}
+.menu__bouton-hebergements{
+    display: flex;
+    justify-content: center;
+    border: transparent solid 2px;
+    padding: 58px 40px 0 40px;
+}
+.menu__bouton-hebergements:hover{
+    border-top: 2px solid var(--btnRechercherMenuIcones);
+}
+.menu__bouton-hebergements:hover a{
+    color: var(--btnRechercherMenuIcones);
+}
+.menu__bouton-activites{
+    display: flex;
+    justify-content: center;
+    border: transparent solid 2px;
+    padding: 58px 40px 0 40px;
+}
+.menu__bouton-activites:hover{
+    border-top: 2px solid var(--btnRechercherMenuIcones);
+    color:var(--btnRechercherMenuIcones);
+}
+.menu__bouton-activites:hover a{
+    color:var(--btnRechercherMenuIcones);
+}
