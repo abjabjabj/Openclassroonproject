@@ -296,3 +296,31 @@ form{
 .les-plus-populaires__descriptif .fiche__etoiles{
     margin-top: auto;
 }
+
+.activites-marseille{              /* ****************************** Section Activités à Marseille ******************* */
+    margin-bottom: 60px;
+    padding: 0 50px;
+}
+.activites-marseille__cartes{
+    display: flex;
+    justify-content: space-between;
+}
+.activites-marseille__fiche{
+    width: 22%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 3px var(--ombres);
+    transition: 0.5s;
+}
+.activites-marseille__fiche:hover{
+    transform: scale(1.05);
+}
+.activites-marseille__image{
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+.activites-marseille__fiche .fiche__nom{
+    margin: 15px 20px;
+    font-size: 1.1em;
+}
