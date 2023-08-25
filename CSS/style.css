@@ -342,3 +342,78 @@ footer p{
 footer div{
     width: 300px;
 }
+
+
+@media screen and (max-width: 991px){
+    .filtres{                                                        
+       
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .filtres__economique, .filtres__familial, .filtres__romantique, .filtres__animaux{
+        justify-content: center;
+        font-size: 0.9em;
+        width: auto; 
+        box-sizing: border-box;
+        margin: 0 10px 0 0;
+        padding: 0 10px;
+    } 
+    .fa-money-bill-wave, .fa-person, .fa-heart, .fa-dog {
+        font-size: 1.2em;
+    }
+    @media screen and (max-width: 850px){
+        .filtres__animaux{
+            width: 48%;
+        }
+    }
+    .hebergements-et-les-plus-populaires{               
+        display: flex;
+        flex-direction: column;
+    } 
+    .hebergements, .les-plus-populaires{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+    }   
+    .les-plus-populaires{
+       padding-top: 10px;
+       margin-top: 50px;
+    }
+    .les-plus-populaires__carte{
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+    }
+    .les-plus-populaires__fiche{
+        align-items: center;
+        width: 30%;
+    }
+    .les-plus-populaires__cadre-image, .les-plus-populaires__descriptif{
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .les-plus-populaires .fiche__nom{
+        font-size: 0.95em;
+    }
+    .les-plus-populaires__descriptif p:nth-child(2) {
+        font-size: 0.7em;
+    }
+    .activites-marseille__cartes{                 
+        height: 267px;
+    }
+    .activites-marseille__image{
+        box-sizing: border-box;
+        height: 210px;
+    }
+    .activites-marseille__fiche .fiche__nom{
+        display: flex;
+        align-items:center; 
+        box-sizing: border-box;
+        height: 57px;
+        padding: 0 10px;
+        margin: 0;
+        font-size: 1em;
+    }
+    footer p{                                     
+        font-size: 1em;
+}
