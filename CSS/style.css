@@ -297,7 +297,7 @@ form{
     margin-top: auto;
 }
 
-.activites-marseille{              /* ****************************** Section Activités à Marseille ******************* */
+.activites-marseille{              
     margin-bottom: 60px;
     padding: 0 50px;
 }
@@ -323,4 +323,22 @@ form{
 .activites-marseille__fiche .fiche__nom{
     margin: 15px 20px;
     font-size: 1.1em;
+}
+footer{                                     
+    display: flex;                                                                      
+    justify-content: space-around;
+    background-color: var(--zonesGrises);
+    margin: 0 50px;
+    padding: 45px 70px;
+}
+footer h2{
+    font-size: 1.3em;
+    margin: 0 0 20px 0;
+}
+footer p{
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+footer div{
+    width: 300px;
 }
