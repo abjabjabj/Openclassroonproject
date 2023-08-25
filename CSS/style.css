@@ -345,7 +345,7 @@ footer div{
 
 
 @media screen and (max-width: 991px){
-    .filtres{                                                        
+    .filtres{                                                         
        
         justify-content: flex-start;
         padding: 0;
@@ -366,7 +366,7 @@ footer div{
             width: 48%;
         }
     }
-    .hebergements-et-les-plus-populaires{               
+    .hebergements-et-les-plus-populaires{                
         display: flex;
         flex-direction: column;
     } 
@@ -398,7 +398,7 @@ footer div{
     .les-plus-populaires__descriptif p:nth-child(2) {
         font-size: 0.7em;
     }
-    .activites-marseille__cartes{                 
+    .activites-marseille__cartes{                  
         height: 267px;
     }
     .activites-marseille__image{
@@ -416,4 +416,5 @@ footer div{
     }
     footer p{                                     
         font-size: 1em;
+}
 }
